@@ -32,6 +32,7 @@ public class DataImporter {
 
 	public static void importJson(String date) throws Exception {
 		URL url = new URL(getUrl(date));
+		//Proxy proxy = new Prox
 		HttpURLConnection request = (HttpURLConnection) url.openConnection();
 		request.connect();
 
